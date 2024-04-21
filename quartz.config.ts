@@ -8,14 +8,15 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "Sect Wiki 📚",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
+    analytics: null,
+    /*{
       provider: "plausible",
-    },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    },*/
+    locale: "ru-RU",
+    baseUrl: "intkgc.github.io/sectwiki",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
