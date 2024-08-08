@@ -9,5 +9,5 @@ title: Секта-Wiki
 
 # Проекты
 
-- [[metaFS]]
+- [[metafs]]
 - [[sectcraft]]
