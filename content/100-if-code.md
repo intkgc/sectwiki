@@ -1,6 +1,8 @@
 ---
 title: 100 If'ов
 ---
+
+Код написан [[intbyte]] в 30.06.2019
 ```js
 var water = 200;
 var water1 = 100;
