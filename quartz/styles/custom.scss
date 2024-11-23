@@ -1,3 +1,27 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+.callout {
+  &[data-callout="custom"] {
+    --color: #customcolor;
+    --border: #custombordercolor;
+    --bg: #custombg;
+    --callout-icon: url("data:image/svg+xml; utf8, <custom formatted svg>"); //SVG icon code
+  }
+}
+
+.callout {
+  &[data-callout="infobox"] {
+    --callout-color: 50, 100, 255;
+    background-color: #00000000;
+    --callout-icon: tag;
+    padding-left: 0;
+    float: right;
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(50, 100, 255, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
