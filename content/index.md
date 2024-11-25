@@ -13,3 +13,4 @@ title: Секта-Wiki
 
 - [[metafs]]
 - [[sectcraft]]
+- [[Intel Vault]]
