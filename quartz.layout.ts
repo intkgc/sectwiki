@@ -7,8 +7,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/intkgc/sectwiki"
     },
   }),
 }
@@ -41,7 +40,7 @@ export const defaultContentPageLayout: PageLayout = {
         fontSize: 0.25, // what size should the node labels be?
         opacityScale: 1, // how quickly do we fade out the labels when zooming out?
         removeTags: [], // what tags to remove from the graph
-        showTags: true, // whether to show tags in the graph
+        showTags: false, // whether to show tags in the graph
       },
       globalGraph: {
         drag: true,
@@ -54,7 +53,7 @@ export const defaultContentPageLayout: PageLayout = {
         fontSize: 0.25,
         opacityScale: 1,
         removeTags: [], // what tags to remove from the graph
-        showTags: true, // whether to show tags in the graph
+        showTags: false, // whether to show tags in the graph
       },
     }),
     Component.DesktopOnly(Component.TableOfContents()),
