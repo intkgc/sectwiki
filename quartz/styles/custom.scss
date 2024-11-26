@@ -40,3 +40,19 @@ img {
     margin-top: 2px;
   }
 }
+
+.centered-table {
+  table {
+    border: 1px solid;
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+.table-round-corners {
+  table {
+    border-collapse: separate;
+    border-radius: 10px;
+  }
+}
