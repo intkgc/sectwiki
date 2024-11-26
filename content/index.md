@@ -10,3 +10,5 @@ title: Секта-Wiki
 - [[sectcraft]]
 - [[intellivault]]
 	- [[mkadb]]
+	- [[ebpm]]
+	- [[ebpm-deploy]]
