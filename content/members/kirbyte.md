@@ -1,1 +1,0 @@
-[[kirbo]] и [[intbyte]] 
