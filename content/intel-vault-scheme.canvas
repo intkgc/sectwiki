@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"03c0bf2d7d53ba30","type":"text","text":"спрашиваем у гпт к чему относится","x":-125,"y":180,"width":250,"height":80},
+		{"id":"5e4aff86d5515375","type":"text","text":"сообщение юзера","x":-125,"y":80,"width":250,"height":60},
+		{"id":"2e78d5081acb9130","type":"text","text":"анализ","x":-125,"y":282,"width":250,"height":60},
+		{"id":"b6f82d11aa769a1f","type":"text","text":"спрашиваем, можно ли ответиить на вопрос с помощью памяти","x":-125,"y":372,"width":250,"height":100},
+		{"id":"c150701286ca287b","type":"text","text":"продолжаем анализ","x":40,"y":560,"width":250,"height":60},
+		{"id":"e5e9070c7bf837b7","type":"text","text":"стандартный ответ","x":-280,"y":560,"width":250,"height":60},
+		{"id":"0ae8cee0a7cf4f85","type":"text","text":"краткая память","x":-880,"y":800,"width":250,"height":60},
+		{"id":"4f6683862d28ae89","x":-448,"y":279,"width":250,"height":60,"type":"text","text":"обычный реплай"},
+		{"id":"e5a6cbc4df30ca71","x":164,"y":206,"width":250,"height":60,"type":"text","text":"ДУУУ СПЕШАЛ"},
+		{"id":"78e957bda4884a41","type":"text","text":"get groups of keywords","x":320,"y":560,"width":250,"height":60},
+		{"id":"f755572270f4b40b","type":"text","text":"какие группы соотносятся с вопросом","x":320,"y":680,"width":250,"height":80},
+		{"id":"223a839673882ebc","type":"text","text":"get all keywords from groups","x":40,"y":690,"width":250,"height":60},
+		{"id":"876ae3132c378cae","x":40,"y":800,"width":250,"height":60,"type":"text","text":"спрашиваем какие слова соотносятся с вопросом"},
+		{"id":"207a7feca601c2e2","x":40,"y":920,"width":250,"height":120,"type":"text","text":"выбираем с помощью гпт фильтры для запроса и используем ключевые слова"},
+		{"id":"c5eacc9b622b4c0a","x":40,"y":1080,"width":250,"height":180,"type":"text","text":"Получаем заметки и их самари, если самари нет, то делаем его (если нужно именно краткое содержание)"},
+		{"id":"76f53107dccbc61b","x":40,"y":1320,"width":250,"height":116,"type":"text","text":"делаем краткое самари всех заметок и отправляем их тудааааа"},
+		{"id":"06a04622a782b489","x":520,"y":171,"width":250,"height":131,"type":"text","text":"различные действия по типу добавть новую заметку, удалить, открыть и тд"}
+	],
+	"edges":[
+		{"id":"a8b8f7252fa99071","fromNode":"5e4aff86d5515375","fromSide":"bottom","toNode":"03c0bf2d7d53ba30","toSide":"top"},
+		{"id":"092c7cdaf1f73891","fromNode":"03c0bf2d7d53ba30","fromSide":"bottom","toNode":"2e78d5081acb9130","toSide":"top"},
+		{"id":"53adde90a7efb71b","fromNode":"2e78d5081acb9130","fromSide":"bottom","toNode":"b6f82d11aa769a1f","toSide":"top"},
+		{"id":"92485b79154c7b0a","fromNode":"b6f82d11aa769a1f","fromSide":"bottom","toNode":"e5e9070c7bf837b7","toSide":"top","label":"да"},
+		{"id":"ae5d3d91b7667f8a","fromNode":"b6f82d11aa769a1f","fromSide":"bottom","toNode":"c150701286ca287b","toSide":"top","label":"нет"},
+		{"id":"5a6e40963bb1281b","fromNode":"c150701286ca287b","fromSide":"right","toNode":"78e957bda4884a41","toSide":"left"},
+		{"id":"d2d1fb91d24d596e","fromNode":"78e957bda4884a41","fromSide":"bottom","toNode":"f755572270f4b40b","toSide":"top"},
+		{"id":"85cb21521d886d09","fromNode":"f755572270f4b40b","fromSide":"left","toNode":"223a839673882ebc","toSide":"right"},
+		{"id":"b8852b7655651c7c","fromNode":"223a839673882ebc","fromSide":"bottom","toNode":"876ae3132c378cae","toSide":"top"},
+		{"id":"b4a50b68c1b7c7b0","fromNode":"876ae3132c378cae","fromSide":"bottom","toNode":"207a7feca601c2e2","toSide":"top"},
+		{"id":"981f9618813a6cd5","fromNode":"207a7feca601c2e2","fromSide":"bottom","toNode":"c5eacc9b622b4c0a","toSide":"top"},
+		{"id":"819307aae552b67f","fromNode":"76f53107dccbc61b","fromSide":"left","toNode":"0ae8cee0a7cf4f85","toSide":"bottom"},
+		{"id":"96e39b51fe243b42","fromNode":"0ae8cee0a7cf4f85","fromSide":"top","toNode":"b6f82d11aa769a1f","toSide":"left"},
+		{"id":"628a6fbfe409c8f7","fromNode":"b6f82d11aa769a1f","fromSide":"left","toNode":"0ae8cee0a7cf4f85","toSide":"right"},
+		{"id":"c02fff348400e23d","fromNode":"03c0bf2d7d53ba30","fromSide":"left","toNode":"4f6683862d28ae89","toSide":"right"},
+		{"id":"60dc0ded8c1e8ecc","fromNode":"c5eacc9b622b4c0a","fromSide":"bottom","toNode":"76f53107dccbc61b","toSide":"top"},
+		{"id":"9da8dcc61c7ee8f3","fromNode":"03c0bf2d7d53ba30","fromSide":"right","toNode":"e5a6cbc4df30ca71","toSide":"left"},
+		{"id":"01b43d4b38892c5f","fromNode":"e5a6cbc4df30ca71","fromSide":"right","toNode":"06a04622a782b489","toSide":"left"}
+	]
+}
