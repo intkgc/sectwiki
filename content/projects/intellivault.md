@@ -51,4 +51,4 @@ fn другое() {
 }
 ```
 
-![[intel-vault-scheme.canvas|Типа схема]]
+![[intel-vault-scheme.png]]
