@@ -56,3 +56,14 @@ img {
     border-radius: 10px;
   }
 }
+
+li {
+  &:has(> .folder-container) {
+    background-color: #FF5733;
+  }
+}
+
+.folder-container {
+  padding: 10px;
+  border-radius: 5px;
+}
