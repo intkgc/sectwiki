@@ -1,5 +1,7 @@
 file_path = "content/index.md"
 
+print("test")
+
 with open(file_path, "r") as file:
     content = file.read()
 
