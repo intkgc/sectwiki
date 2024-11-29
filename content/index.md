@@ -15,7 +15,7 @@ cssclasses:
 	- [[sect/lore/|Лор]]
 	- [[sect/real-history/|История]]
 		- [[book-1|Книга первая]]
-		- [[book-2|Утерянные данные]]
+		- [[sect/real-history/book-2|Утерянные данные]]
 		- [[book-3| Книга третья]]
 - [[other/|Прочее]]
 
