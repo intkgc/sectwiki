@@ -1,3 +1,5 @@
+import os
+
 file_path = "content/index.md"
 
 print("Work dir: ", os.getcwd())
