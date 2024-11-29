@@ -32,7 +32,7 @@ jobs:
               pip install -r requirements.txt
       - name: Build projects table script
         run: |
-          python build_table
+          python build_table.py
       - uses: actions/setup-node@v3
         with:
           node-version: 18.14
