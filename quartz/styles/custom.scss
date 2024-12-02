@@ -57,6 +57,13 @@ img {
   }
 }
 
+.tag-link {
+  font-family: "Noto Emoji", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /*li {
   &:has(> .folder-container) {
     background-color: #FF5733;
