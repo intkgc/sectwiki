@@ -57,15 +57,17 @@ img {
   }
 }
 
-.tag-link {
-  font-family: "Noto Emoji", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: larger;
+a.internal {
+  &.tag-link {
+    font-family: "Noto Emoji", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: larger;
 
-  &::before {
-    content: "";
+    &::before {
+      content: "";
+    }
   }
 }
 
