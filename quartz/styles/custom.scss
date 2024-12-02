@@ -62,7 +62,13 @@ img {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-size: larger;
+
+  a.internal &::before {
+    content: "";
+  }
 }
+
 
 /*li {
   &:has(> .folder-container) {
