@@ -5,7 +5,7 @@ subprojects:
   - "[[mkadb]]"
 devs:
   - "[[intkgc]]"
-status: "#🟦"
+status: "#✏️"
 development_start: 2024-10-26
 development_end:
 ---

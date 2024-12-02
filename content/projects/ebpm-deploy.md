@@ -2,7 +2,7 @@
 description: Проект для деплоя.
 devs:
   - "[[intkgc]]"
-status: "#🟥"
+status: "#🔧"
 ---
 
 
