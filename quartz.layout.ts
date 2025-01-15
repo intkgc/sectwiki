@@ -36,7 +36,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
-    Component.MobileOnly(Component.Darkmode()),,
+    Component.MobileOnly(Component.Darkmode()),
     Component.DesktopOnly(explorerDesktop),
   ],
   right: [
