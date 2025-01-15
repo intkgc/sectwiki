@@ -2,11 +2,7 @@
 title: Управление настройками с помощью Jetpack DataStore — Простой подход к сохранению данных разных типов
 ---
 
-### Статья: **Управление настройками с помощью Jetpack DataStore: Простой способ хранения данных разных типов.**
-
----
-
-**Введение**
+## **Введение**
 
 При разработке Android-приложений часто возникает необходимость сохранять пользовательские настройки, такие как выбор темы, язык или другие данные пользователя. Jetpack DataStore — это современное решение для хранения таких данных, которое заменяет устаревший `SharedPreferences`. В этой статье мы рассмотрим, как использовать `DataStore` для хранения различных типов данных (Boolean, Integer, Float и String) и как интегрировать его с архитектурой MVVM, используя `StateFlow` для обновления UI.
 
@@ -65,7 +61,7 @@ dependencies {
 #### Код для `DataStoreManager`
 
 ```kotlin
-package com.byteflipper.soulplayer.data
+package com.example.app
 
 import android.content.Context
 import androidx.datastore.core.DataStore
@@ -128,7 +124,7 @@ class DataStoreManager(private val context: Context) {
 #### Код для `AppViewModel`
 
 ```kotlin
-package com.byteflipper.soulplayer.viewmodel
+package com.example.app
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
