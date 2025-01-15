@@ -1,10 +1,22 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+const explorerMobile = Component.Explorer({
+  title: 'Проводник',
+  folderDefaultState: 'open'
+})
+const explorerDesktop = Component.Explorer({
+  folderDefaultState: 'open',
+  folderClickBehavior: 'collapse'
+})
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
+  afterBody: [
+    Component.MobileOnly(explorerMobile),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/intkgc/sectwiki"
@@ -24,8 +36,8 @@ export const defaultContentPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
-    Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.MobileOnly(Component.Darkmode()),,
+    Component.DesktopOnly(explorerDesktop),
   ],
   right: [
     Component.Graph({
@@ -56,6 +68,7 @@ export const defaultContentPageLayout: PageLayout = {
         showTags: true, // whether to show tags in the graph
       },
     }),
+    Component.DesktopOnly(Component.Darkmode()),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -69,7 +82,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(explorerDesktop),
   ],
   right: [],
 }
